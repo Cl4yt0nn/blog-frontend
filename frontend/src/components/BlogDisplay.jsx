@@ -20,7 +20,7 @@ function HomePage() {
 
     useEffect(() => {
         axios
-            .get("http://localhost:10000/posts/view/" + params.id)
+            .get("https://blog-app-backend-cw2g.onrender.com/posts/view/" + params.id)
             .then((res) => {
                 setBlogForm(res.data.data);
             })
