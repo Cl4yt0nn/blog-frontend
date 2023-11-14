@@ -24,7 +24,7 @@ function SignIn() {
     const onSubmit = (data) => {
         data.preventDefault();
         axios
-            .post("http://localhost:10000/users/signin", logInInfo)
+            .post("https://blog-app-backend-cw2g.onrender.com/users/signin", logInInfo)
             .then((res) => {
                 let info = res.data.data[0];
                 console.log(info)
