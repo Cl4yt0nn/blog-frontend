@@ -31,7 +31,7 @@ function HomePage() {
 
     useEffect(() => {
         axios
-            .get("http://localhost:10000/posts/display-post")
+            .get("https://blog-app-backend-cw2g.onrender.com//posts/display-post")
             .then((res) => {
                 let blogList = res.data.data;
                 console.log(blogList);
