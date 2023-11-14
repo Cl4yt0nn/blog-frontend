@@ -43,7 +43,7 @@ function SignUp() {
         e.preventDefault();
         console.log(signUpInfo);
         axios
-            .post("http://localhost:10000/users/access-users", signUpInfo)
+            .post("https://blog-app-backend-cw2g.onrender.com//users/access-users", signUpInfo)
             .then(res => {
                 console.log(res.data.data[0]);
                 if (res.data.data[0] == undefined) {
@@ -57,7 +57,7 @@ function SignUp() {
     function createAccount() {
         if (passwordMatch) {
             axios
-            .post("http://localhost:10000/users/signup", signUpInfo)
+            .post("https://blog-app-backend-cw2g.onrender.com//users/signup", signUpInfo)
             .then((res) => {
                 console.log(res.data);
                 modifySignUpInfo({
