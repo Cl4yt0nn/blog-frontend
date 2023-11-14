@@ -45,7 +45,7 @@ function CreatePost() {
     const onSubmit = (e) => {
         e.preventDefault();
         axios
-            .post("http://localhost:10000/posts/create-post", blogForm)
+            .post("https://blog-app-backend-cw2g.onrender.com/posts/create-post", blogForm)
             .then((res) => {
                 console.log(res.data.data);
             });
