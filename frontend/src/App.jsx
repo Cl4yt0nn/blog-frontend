@@ -12,6 +12,9 @@ import BlogDisplay from './components/BlogDisplay.jsx';
 function App() {
 
   const acc = localStorage.getItem("accLoggedInto");
+  if (acc == null) {
+    localStorage.setItem("accLoggedInto", undefined);
+  }
 
   return (
     <>
